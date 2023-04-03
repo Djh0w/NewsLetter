@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: 'League Spartan', sans-serif;
+    background-color: #121214;
+
+}
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+  }
+
+.logo img {
+    position: absolute;
+    width: 389px;
+    height: 94px;
+    left: 30px;
+    top: 50px;
+}
+
+.texto {
+    position: absolute;
+    width: 647px;
+    height: 102px;
+    left: 36px;
+    top: 236px;
+}
+
+#title {
+    position: absolute;
+    width: 566px;
+    height: 30.44px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+color: var(--title-color)
+}
+
+#subtitle {
+    position: absolute;
+    width: 517px;
+    height: 16px;  
+    top: 39px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: var(--text-color);
+}
+
+#texto {
+    position: absolute;
+    width: 647px;
+    height: 38px;    
+    top: 64px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+color: var(--text-color)
+}
+
+.email {
+    position: absolute;    
+    width: 133px;
+    height: 19px;    
+    left: 36px;
+    top: 388px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 138.73%;
+
+    color: var(--form-color)
+}
+
+.form {
+    display: flex;
+    position: absolute;
+    width: 800px;
+    height: 48px;
+    left: 36px;
+    top: 424px;
+    align-items: center;
+    background-color: red;
+}
+
+input {
+    position: absolute;
+    width: 750px;
+    height: 48px;
+    padding-left: 10px;
+
+    background: var(--text-color);
+    border-left-color: var(--title-color); /*POR COR APENAS NA BORDA DA ESQUEERDA*/
+    border-left-width: 5px; /*PARA COLOCAR BORDA APENAS NA ESQUERDA*/
+    /*ANULA AS OUTRAS BORDAS*/
+    border-top: none;
+    border-bottom: none;
+    border-right: none;      
+    
+}
+
+/*QUANDO CLICA NO INPUT RETIRA A BORDA*/
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+button {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 753px;  
+    border: none;    
+
+    background: var(--bg-button-color);
+}
+
+.form a {
+    display: flex;
+    position: absolute;
+    width: 196px;
+    height: 24px;
+    top: 124px;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 138.73%;
+
+    color: var(--bg-button-color)
+
+}
+
+.form a img {        
+    position: absolute;
+    width: 24px;
+    height: 24px; 
+    left: 135px;         
+}
+
+.image {      
+    position: absolute;   
+    width: 720px;
+    height: 640px;
+    left: 700px;
+    /*PARAMETRO PARA POR A DIV PARA TRAS*/
+    z-index: -1;
+    
+    
+
+    background: url(./assets/read_news.jpg);
+    background-color: red;
+    /*PROPRIEDADES DA FORMATACAO DA IMAGEM*/
+    background-position: top center;
+    background-size: 140% auto; /*ZOOM NA IMAGEM COMPLETE DIV*/
+    background-repeat: no-repeat;
+
+    
+}
